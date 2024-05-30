@@ -1,0 +1,82 @@
+.sp1{
+    font-size:40px ;
+    margin-right:1000px;
+    margin-left:100px;
+}
+.sp2{
+    border-radius:70%;
+    font-size:40px; 
+    font-weight: bold; 
+    color:white;
+    background-color:black; 
+    padding-left:7px;
+    padding-right:7px;
+    padding-top:-3px;
+    padding-bottom:-3px;
+}
+.btn{
+    height:40px;
+    position:fixed;
+    left:1050px;
+    width:100px;
+    margin-top:400px;
+    display:none;
+}
+.btn2{
+    height:40px;
+    position:fixed;
+    left:1150px;
+    width:100px;
+    margin-top:400px;
+    display:none;
+}
+.ip1{
+    width:250px;
+    height:50px;
+    position:fixed;
+    left:1050px;
+    display:none;
+}
+.ip2{
+    width:250px;
+    height:350px; 
+    margin-top:50px;
+    position:fixed;
+    left:1050px;
+    display:none;
+}
+li{
+    color:brown;
+    font-size:30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-left:30px;
+    border:2px solid black;
+    padding:10px;
+    border-radius:5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left:10px;
+    margin-bottom: 20px;
+}
+li div{
+    font-size:15px;
+    padding:5px;
+    border-radius:5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    color:black;
+}
+li[input='checkbox']{
+    margin-left:30px;
+}
+li button{
+    width:70px;
+    height:30px;
+}
+.container{
+    display: flex;
+}
+.innerdiv{
+    float:right;
+}

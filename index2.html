@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <title>To-Do List</title>
+
+</head>
+<body>
+    <div class="main" style="margin-top:30px;margin-bottom:30px">
+        <span class="sp1">To-Do List</span>
+        <a href="#"><span class="sp2">+</span></a>
+    </div>
+  <div class="container">
+    <p id="p1">no activities here.....</p>
+    <ul id="inputTextList" style="list-style-type:none;"></ul>
+    <div class="innerdiv">
+    <input type="text" id="inputTextInputh" placeholder="Activity Name..." class="ip1"><br>
+    <input type="text" id="inputTextInput" placeholder="Add Description..." class="ip2"><br>
+    <button onclick="Add()" class="btn">Add</button>
+    <button  class="btn2">close</button><br>
+    </div>
+  </div>
+  <script>
+    $('.sp2').click(function(){
+        $('.ip1').fadeIn(1000);
+        $('.ip2').fadeIn(1000);
+        $('.btn').fadeIn(1000);
+        $('.btn2').fadeIn(1000);
+    });
+    $('.btn2').click(function(){
+        $('.ip1').fadeOut(1000);
+        $('.ip2').fadeOut(1000);
+        $('.btn').fadeOut(1000);
+        $('.btn2').fadeOut(1000);
+    });
+  function Add() {
+   document.getElementById('p1').style.display='none';
+  var inputh=document.getElementById('inputTextInputh');
+  var input = document.getElementById('inputTextInput');
+  var inputText = input.value;
+  const heading=inputh.value;
+  inputh.value="";
+  input.value = '';
+  if (inputText === '') {
+    alert('please enter the description');
+}
+    else{
+  var ul = document.getElementById('inputTextList');
+  var li = document.createElement('li');
+  var checkbox = document.createElement('input');
+  checkbox.type = 'checkbox';
+  /*checkbox.addEventListener('change', function() {
+    if (checkbox.checked) {
+      li.style.textDecoration = 'line-through'; 
+    } else {
+      li.style.textDecoration = 'none'; 
+    }
+  });*/
+
+
+  var deleteButton = document.createElement('button');
+  deleteButton.textContent = 'Delete';
+  deleteButton.addEventListener('click', function() {
+    if(checkbox.checked){
+    let confrm=confirm('are u sure to delete');
+    if(confrm==true){ul.removeChild(li);}}
+    else{
+        alert('click the checkbox');
+    }
+  });
+  const brk=document.createElement('br');
+  const para=document.createElement('div');
+  const text=document.createTextNode(inputText);
+  para.appendChild(text);
+  para.appendChild(brk);
+  li.textContent = heading;
+  li.appendChild(para);
+  li.appendChild(brk);
+  li.appendChild(checkbox);
+  li.appendChild(brk);
+  li.appendChild(deleteButton);
+  ul.appendChild(li);
+}
+  }
+
+  </script>
+</body>
+</html>
