@@ -1,8 +1,8 @@
 .sp1{
     font-size:30px;
-    margin-right:60%;
+    margin-right:70%;
     margin-left:40px;
-    color:red;
+    color:black;
     font-weight: bold;
     font-style: italic;
 }
@@ -11,13 +11,11 @@
     font-size:40px; 
     font-weight: bold; 
     color:white;
-    background-color:grey; 
+    background-color:black; 
     padding-left:7px;
     padding-right:7px;
     padding-top:-3px;
     padding-bottom:-3px;
-    font-weight: bold;
-    font-style: italic;
 }
 .btn{
     height:43px;
@@ -76,8 +74,8 @@
 .main{
     margin-left: 40px;
     margin-top:10px;
-    width:43%;
-    color: rgb(226, 38, 38);
+    width:50%;
+    color: rgb(148, 21, 21);
     font-size:30px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -106,7 +104,7 @@
     margin-left:50px;
     border-radius: 5px;
     border-color: beige;
-    background-color: red;
+    background-color: rgb(148, 21, 21);;
     color:white;
 }
 .main_span{
@@ -119,14 +117,14 @@
 #p1{
     font-size:20px;
     margin-left:40px;
-    color:black;
+    color:rgb(87, 16, 168);
     font-weight: bold;
 }
 #p2{
     margin-left:40px;
     font-size:20px;
     display:none;
-    color:black;
+    color:rgb(87, 16, 168);
     font-weight: bold;
 }
 .btn1{
@@ -143,9 +141,8 @@
     font-weight: bold;
 }
 body{
-    background-image: url('bg\ image.jpg');
+    background-image: url('bg3.jpg');
     background-size: cover;
-    background-repeat:no repeat;
 }
 #new input[type="checkbox"] {
     width: 15px;
