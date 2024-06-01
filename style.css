@@ -16,6 +16,8 @@
     padding-right:7px;
     padding-top:-3px;
     padding-bottom:-3px;
+    font-weight: bold;
+    font-style: italic;
 }
 .btn{
     height:43px;
