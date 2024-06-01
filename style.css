@@ -145,6 +145,7 @@
 body{
     background-image: url('bg\ image.jpg');
     background-size: cover;
+    background-repeat:no repeat;
 }
 #new input[type="checkbox"] {
     width: 15px;
